@@ -1,58 +1,58 @@
 ﻿[
   {
-    "Id": "79d2105c-bc01-4acd-a006-5f10bf4c011b",
+    "Id": "984fee77-244b-4938-a24b-1fab02cc13c4",
     "Name": "Tech Innovation Summit 2026",
-    "Description": "Un evento corporativo que reúne a líderes tecnológicos para discutir tendencias en IA, cloud y ciberseguridad.",
+    "Description": "A corporate event bringing together technology leaders to discuss trends in AI, cloud, and cybersecurity.",
     "Date": "2026-05-12T09:00:00",
-    "Location": "Centro de Convenciones, La Paz"
+    "Location": "Convention Center, San Francisco, USA"
   },
   {
-    "Id": "27bb2bf4-3556-452e-92a8-c856829f2fca",
-    "Name": "Networking Empresarial",
-    "Description": "Encuentro social para fortalecer relaciones entre empresarios locales y potenciales socios.",
+    "Id": "18cec2b9-9da8-42bf-86b4-0a121ce826f6",
+    "Name": "Global Networking Forum",
+    "Description": "A social gathering to strengthen relationships among entrepreneurs and potential partners worldwide.",
     "Date": "2026-06-20T18:30:00",
-    "Location": "Hotel Real, Santa Cruz"
+    "Location": "Hilton Hotel, London, UK"
   },
   {
-    "Id": "4758019f-82e4-4a1c-ad79-802116f5bc0d",
-    "Name": "Festival de Innovación Educativa",
-    "Description": "Presentación de proyectos educativos innovadores con enfoque en accesibilidad y tecnología.",
+    "Id": "e8989ce5-b3e4-447b-a25e-36e6416cfff7",
+    "Name": "Educational Innovation Festival",
+    "Description": "Presentation of innovative educational projects focusing on accessibility and technology.",
     "Date": "2026-07-08T10:00:00",
-    "Location": "Universidad Mayor de San Andrés, La Paz"
+    "Location": "University of Sydney, Australia"
   },
   {
-    "Id": "0a8f4907-d1a5-4092-b888-09aa3d05b601",
-    "Name": "Concierto Solidario",
-    "Description": "Evento social con música en vivo para recaudar fondos destinados a programas comunitarios.",
+    "Id": "8e3ac73f-9f67-4ac4-96a9-1a9a08b5ba01",
+    "Name": "Charity Concert",
+    "Description": "A social event with live music to raise funds for community programs.",
     "Date": "2026-08-15T19:00:00",
-    "Location": "Estadio Víctor Agustín Ugarte, Potosí"
+    "Location": "Madison Square Garden, New York, USA"
   },
   {
-    "Id": "e462cdfd-9ecf-49be-8c98-13d55d9a681f",
-    "Name": "Expo Startups Bolivia",
-    "Description": "Exposición de startups bolivianas con charlas, paneles y oportunidades de inversión.",
+    "Id": "74921884-5638-42cb-98f8-611ef5508e03",
+    "Name": "Startup Expo 2026",
+    "Description": "An exhibition of startups from around the world with talks, panels, and investment opportunities.",
     "Date": "2026-09-25T09:00:00",
-    "Location": "Fexpocruz, Santa Cruz"
+    "Location": "Expo Center Norte, São Paulo, Brazil"
   },
-    {
-        "Id": "3bf7f3e2-147b-4df2-a955-6553e52f2312",
-        "Name": "Feria de Emprendimiento Juvenil",
-        "Description": "Evento social que promueve el emprendimiento entre jóvenes con talleres y mentorías.",
-        "Date": "2026-10-10T14:00:00",
-        "Location": "Parque Urbano Central, La Paz"
-    },
-    {
-        "Id": "c57cafc2-ffea-444e-bcb0-48ddad0141c5",
-        "Name": "Conferencia de Sostenibilidad Empresarial",
-        "Description": "Evento corporativo que aborda prácticas sostenibles en el ámbito empresarial.",
-        "Date": "2026-11-05T09:00:00",
-        "Location": "Hotel Los Tajibos, Santa Cruz"
-    },
-    {
-        "Id": "8f8786eb-7d0a-4efa-beda-e27b3fe5b3f9",
-        "Name": "Festival de Música Folklórica",
-        "Description": "Evento social que celebra la música folklórica boliviana con presentaciones en vivo.",
-        "Date": "2026-12-20T18:00:00",
-        "Location": "Plaza Murillo, La Paz"
-    }
+  {
+    "Id": "4c4f9f79-ee88-4370-82a1-658ca3dc0ac6",
+    "Name": "Youth Entrepreneurship Fair",
+    "Description": "A social event promoting entrepreneurship among young people with workshops and mentoring.",
+    "Date": "2026-10-10T14:00:00",
+    "Location": "Central Park, New York, USA"
+  },
+  {
+    "Id": "8741c663-cdcd-4435-b303-acdb3ee525f6",
+    "Name": "Corporate Sustainability Conference",
+    "Description": "A corporate event addressing sustainable practices in the business environment.",
+    "Date": "2026-11-05T09:00:00",
+    "Location": "Marina Bay Sands, Singapore"
+  },
+  {
+    "Id": "fd2bbca6-a94a-48a9-ae03-8691ac8208d4",
+    "Name": "World Folk Music Festival",
+    "Description": "A social event celebrating folk music from different cultures with live performances.",
+    "Date": "2026-12-20T18:00:00",
+    "Location": "Plaza Mayor, Madrid, Spain"
+  }
 ]
