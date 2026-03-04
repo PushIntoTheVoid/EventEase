@@ -1,0 +1,59 @@
+@page "/RegisterEvent"
+
+@using System.ComponentModel.DataAnnotations
+@using EventEase.Models
+@using Microsoft.AspNetCore.Components.Forms
+
+@inject EventEase.service.EventService EventService
+
+<PageTitle>Register</PageTitle>
+
+<section class="glass-panel p-4 p-md-5 fade-in-up" style="max-width:700px;">
+    <h1 class="page-title">Event Registration</h1>
+    <p class="page-subtitle">Reserve your seat in seconds and stay updated with real-time event notifications.</p>
+
+    <EditForm Model="@_event" OnValidSubmit="@HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        
+        <div class="mb-3">
+            <label class="form-label">Name: </label>
+            <InputText @bind-Value="_event.Name" class="form-control" type="text" placeholder="Event name"/>
+            <ValidationMessage For="@(() => _event.Name)" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Description: </label>
+            <InputText @bind-Value="_event.Description" class="form-control" type="text" placeholder="Event description"/>
+            <ValidationMessage For="@(() => _event.Description)" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Date: </label>
+            <InputDate @bind-Value="_event.Date" class="form-control" placeholder="Event Date"/>
+            <ValidationMessage For="@(() => _event.Date)" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Location: </label>
+            <InputText @bind-Value="_event.Location" class="form-control" type="text" placeholder="Location "/>
+            <ValidationMessage For="@(() => _event.Location)" />
+        </div>
+        <button type="submit" class="btn btn-primary">Complete Registration</button>
+    </EditForm>
+</section>
+
+@if (message != null)
+{
+    <div class="alert alert-success mt-3">@message</div>
+}
+
+@code {
+    private Event _event = new Event();
+    private string? message;
+    
+    private async Task HandleValidSubmit()
+    {
+        _event.Id = Guid.NewGuid();
+        await EventService.CreateEventAsync(_event);
+        message = "Registration successful!";
+        _event = new Event();
+    }
+}

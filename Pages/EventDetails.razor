@@ -1,0 +1,42 @@
+@page "/EventDetails/{Id:guid}"
+@inject EventEase.service.EventService EventService
+
+<PageTitle>Event Details</PageTitle>
+
+@if (eventDetail == null)
+{
+    <div class="glass-card p-4 fade-in-up">
+        <em style="color:#c5d0e6;">Loading details...</em>
+    </div>
+}
+else
+{
+    <section class="glass-panel p-4 p-md-5 fade-in-up" style="max-width:780px;">
+        <h1 class="page-title mb-3">@eventDetail.Name</h1>
+        <p class="mb-3" style="color:#c5d0e6;">@eventDetail.Description</p>
+
+        <div class="glass-card p-3 mb-3">
+            <div style="color:#8fa3c8;">Date</div>
+            <div>@eventDetail.Date.ToString("dd MMM yyyy - HH:mm")</div>
+        </div>
+
+        <div class="glass-card p-3 mb-4">
+            <div style="color:#8fa3c8;">Location</div>
+            <div>@eventDetail.Location</div>
+        </div>
+
+        <a class="btn btn-outline-light" href="/Events">Back to Events</a>
+    </section>
+}
+
+@code {
+    [Parameter]
+    public Guid Id { get; set; }
+
+    private EventEase.Models.Event? eventDetail;
+
+    protected override async Task OnInitializedAsync()
+    {
+        eventDetail = await EventService.GetEventByIdAsync(Id);
+    }
+}

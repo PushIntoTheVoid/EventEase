@@ -1,0 +1,37 @@
+@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+<section class="glass-panel p-4 p-md-5 fade-in-up" style="max-width:760px;">
+    <h1 class="page-title">System Counter</h1>
+    <p class="page-subtitle">Interactive utility panel with animated controls in the new interface style.</p>
+
+    <p role="status" class="mb-3">Current count: <strong>@currentCount</strong></p>
+
+    <button class="btn btn-primary" @onclick="IncrementCount">Increment</button>
+
+    <div class="glass-card mt-4 p-3" style="max-height:230px; overflow:auto;">
+        @foreach (var guid in guids)
+        {
+            <p class="mb-1" style="color:#c5d0e6; font-size:.9rem;">@guid</p>
+        }
+    </div>
+</section>
+
+@code {
+    private int currentCount = 0;
+    private List<Guid> guids = new();
+
+    protected override void OnInitialized()
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            guids.Add(Guid.NewGuid());
+        }
+    }
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}

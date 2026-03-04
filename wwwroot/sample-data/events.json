@@ -1,0 +1,58 @@
+﻿[
+  {
+    "Id": "79d2105c-bc01-4acd-a006-5f10bf4c011b",
+    "Name": "Tech Innovation Summit 2026",
+    "Description": "Un evento corporativo que reúne a líderes tecnológicos para discutir tendencias en IA, cloud y ciberseguridad.",
+    "Date": "2026-05-12T09:00:00",
+    "Location": "Centro de Convenciones, La Paz"
+  },
+  {
+    "Id": "27bb2bf4-3556-452e-92a8-c856829f2fca",
+    "Name": "Networking Empresarial",
+    "Description": "Encuentro social para fortalecer relaciones entre empresarios locales y potenciales socios.",
+    "Date": "2026-06-20T18:30:00",
+    "Location": "Hotel Real, Santa Cruz"
+  },
+  {
+    "Id": "4758019f-82e4-4a1c-ad79-802116f5bc0d",
+    "Name": "Festival de Innovación Educativa",
+    "Description": "Presentación de proyectos educativos innovadores con enfoque en accesibilidad y tecnología.",
+    "Date": "2026-07-08T10:00:00",
+    "Location": "Universidad Mayor de San Andrés, La Paz"
+  },
+  {
+    "Id": "0a8f4907-d1a5-4092-b888-09aa3d05b601",
+    "Name": "Concierto Solidario",
+    "Description": "Evento social con música en vivo para recaudar fondos destinados a programas comunitarios.",
+    "Date": "2026-08-15T19:00:00",
+    "Location": "Estadio Víctor Agustín Ugarte, Potosí"
+  },
+  {
+    "Id": "e462cdfd-9ecf-49be-8c98-13d55d9a681f",
+    "Name": "Expo Startups Bolivia",
+    "Description": "Exposición de startups bolivianas con charlas, paneles y oportunidades de inversión.",
+    "Date": "2026-09-25T09:00:00",
+    "Location": "Fexpocruz, Santa Cruz"
+  },
+    {
+        "Id": "3bf7f3e2-147b-4df2-a955-6553e52f2312",
+        "Name": "Feria de Emprendimiento Juvenil",
+        "Description": "Evento social que promueve el emprendimiento entre jóvenes con talleres y mentorías.",
+        "Date": "2026-10-10T14:00:00",
+        "Location": "Parque Urbano Central, La Paz"
+    },
+    {
+        "Id": "c57cafc2-ffea-444e-bcb0-48ddad0141c5",
+        "Name": "Conferencia de Sostenibilidad Empresarial",
+        "Description": "Evento corporativo que aborda prácticas sostenibles en el ámbito empresarial.",
+        "Date": "2026-11-05T09:00:00",
+        "Location": "Hotel Los Tajibos, Santa Cruz"
+    },
+    {
+        "Id": "8f8786eb-7d0a-4efa-beda-e27b3fe5b3f9",
+        "Name": "Festival de Música Folklórica",
+        "Description": "Evento social que celebra la música folklórica boliviana con presentaciones en vivo.",
+        "Date": "2026-12-20T18:00:00",
+        "Location": "Plaza Murillo, La Paz"
+    }
+]

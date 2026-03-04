@@ -1,0 +1,38 @@
+@page "/Events"
+@using EventEase.components
+@inject EventEase.service.EventService EventService
+
+<PageTitle>Events</PageTitle>
+
+<section class="mb-4 fade-in-up">
+    <h1 class="page-title">Upcoming Experiences</h1>
+    <p class="page-subtitle">Discover curated events and open each detail view for full schedules and location information.</p>
+</section>
+
+@if (events == null)
+{
+    <div class="glass-card p-4 fade-in-up">
+        <em style="color:#c5d0e6;">Loading events...</em>
+    </div>
+}
+else
+{
+    <div class="event-grid">
+        @foreach (var ev in events)
+        {
+            <div class="d-flex flex-column gap-2">
+                <EventCard Event="ev" />
+                <a class="btn btn-primary" href="@($"/EventDetails/{ev.Id}")">View Details</a>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private List<EventEase.Models.Event>? events;
+
+    protected override async Task OnInitializedAsync()
+    {
+        events = await EventService.GetEventsAsync();
+    }
+}
